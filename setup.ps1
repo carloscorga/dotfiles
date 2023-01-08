@@ -1,11 +1,15 @@
+function RefreshEnvPath
+{
+    $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") `
+        + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+}
+
 function checkWinget {
     if ($null -eq (Get-Command -Name winget.exe -ErrorAction SilentlyContinue)) {
         Write-Host "Winget not found. Please install."
         Exit
     }
 }
-
-checkWinget
 
 function setupChocolatey {
     if ($null -eq (Get-Command -Name choco.exe -ErrorAction SilentlyContinue)) {
@@ -19,6 +23,7 @@ function setupChocolatey {
     }
 }
 
+checkWinget
 setupChocolatey
 
 $installVisualStudio = (Read-Host "Install Visual Studio 2022: (y/N)").ToLower() -eq 'y'
@@ -37,9 +42,10 @@ if ($installAndroidStudio) {
     Write-Host "Android Studio will be installed" -ForegroundColor "Blue"
 }
 
-choco install -y git
+#choco install -y git
+winget install -e -h --id Git.Git
 
-RefreshEnv
+RefreshEnvPath
 
 git clone https://github.com/carloscorga/dotfiles.git "$env:USERPROFILE\dotfiles"
 

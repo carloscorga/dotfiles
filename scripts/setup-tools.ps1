@@ -1,20 +1,16 @@
 Write-Host "Setup tools" -ForegroundColor "Yellow"
 
-function RefreshEnvPath
-{
-    $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") `
-        + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-}
-
 # Common tools
 
-choco install -y virtualbox
+#choco install -y virtualbox
 choco install -y virtualbox-guest-additions-guest.install
 
 choco install -y 7zip
 #winget install -e -h --id 7zip.7zip
 
-winget install -e -h --id Microsoft.PowerToys
+winget install -e -h --id Oracle.VirtualBox
+
+winget install -e -h --id Microsoft.PowerToys --source winget
 winget install -e -h --id Obsidian.Obsidian
 winget install -e -h --id Logitech.Options
 winget install -e -h --id Notepad++.Notepad++
@@ -23,6 +19,8 @@ winget install -e -h --id JGraph.Draw
 winget install -e -h --id OBSProject.OBSStudio
 winget install -e -h --id AntibodySoftware.WizTree
 winget install -e -h --id NickeManarin.ScreenToGif
+
+winget install -e -h --id VideoLAN.VLC
 
 # Comms
 
@@ -49,6 +47,7 @@ winget install -e -h --id JanDeDobbeleer.OhMyPosh
 
 winget install -e -h --id Postman.Postman
 winget install -e -h --id WinMerge.WinMerge
+winget install -e -h --id GitHub.cli
 
 # .net
 
