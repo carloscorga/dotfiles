@@ -42,8 +42,8 @@ if ($installAndroidStudio) {
     Write-Host "Android Studio will be installed" -ForegroundColor "Blue"
 }
 
-#choco install -y git
-winget install -e -h --id Git.Git
+choco install -y git
+#winget install -e -h --id Git.Git
 
 RefreshEnvPath
 

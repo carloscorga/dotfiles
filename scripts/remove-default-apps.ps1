@@ -7,6 +7,8 @@ function removeApp {
 	Get-AppXProvisionedPackage -Online | Where DisplayName -like $appName | Remove-AppxProvisionedPackage -Online
 }
 
+#TODO: Remove Xbox Game Bar, Xbox Game Speech Windows, Xbox Live
+
 $applicationList = @(
     "Microsoft.BingFinance"
     "Microsoft.3DBuilder"

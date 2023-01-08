@@ -3,12 +3,11 @@ Write-Host "Setup tools" -ForegroundColor "Yellow"
 # Common tools
 
 #choco install -y virtualbox
-choco install -y virtualbox-guest-additions-guest.install
+#winget install -e -h --id Oracle.VirtualBox
+#choco install -y virtualbox-guest-additions-guest.install
 
 choco install -y 7zip
 #winget install -e -h --id 7zip.7zip
-
-winget install -e -h --id Oracle.VirtualBox
 
 winget install -e -h --id Microsoft.PowerToys --source winget
 winget install -e -h --id Obsidian.Obsidian
@@ -39,15 +38,15 @@ winget install -e -h --id Mozilla.Firefox
 # Prompt
 
 winget install -e -h --id Microsoft.PowerShell
-winget install -e -h --id Microsoft.WindowsTerminal -s msstore
+#choco install -y microsoft-windows-terminal
+#winget install -e -h --id Microsoft.WindowsTerminal -s msstore
 
 winget install -e -h --id JanDeDobbeleer.OhMyPosh
 
 # Dev tools
 
-winget install -e -h --id Postman.Postman
+#winget install -e -h --id Postman.Postman
 winget install -e -h --id WinMerge.WinMerge
-winget install -e -h --id GitHub.cli
 
 # .net
 
