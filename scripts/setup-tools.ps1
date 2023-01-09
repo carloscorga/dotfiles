@@ -2,12 +2,15 @@ Write-Host "Setup tools" -ForegroundColor "Yellow"
 
 # Common tools
 
-#choco install -y virtualbox
-#winget install -e -h --id Oracle.VirtualBox
-#choco install -y virtualbox-guest-additions-guest.install
+# choco install -y virtualbox
+# winget install -e -h --id Oracle.VirtualBox
+# if($LASTEXITCODE) {
+#     "Oracle VirtualBox successfully installed - installing guest additions"
+#     choco install -y virtualbox-guest-additions-guest.install
+# }
 
 choco install -y 7zip
-#winget install -e -h --id 7zip.7zip
+# winget install -e -h --id 7zip.7zip
 
 winget install -e -h --id Microsoft.PowerToys --source winget
 winget install -e -h --id Obsidian.Obsidian
@@ -34,13 +37,6 @@ winget install -e -h --id DominikReichl.KeePass
 
 winget install -e -h --id Google.Chrome
 winget install -e -h --id Mozilla.Firefox
-
-# Prompt
-
-winget install -e -h --id Microsoft.PowerShell
-#choco install -y microsoft-windows-terminal
-#winget install -e -h --id Microsoft.WindowsTerminal -s msstore
-#winget install -e -h --id JanDeDobbeleer.OhMyPosh
 
 # Dev tools
 

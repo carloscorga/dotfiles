@@ -52,4 +52,6 @@ git clone https://github.com/carloscorga/dotfiles.git "$env:USERPROFILE\dotfiles
 . "$env:USERPROFILE\dotfiles\scripts\configure-windows-explorer.ps1"
 . "$env:USERPROFILE\dotfiles\scripts\remove-default-apps.ps1"
 . "$env:USERPROFILE\dotfiles\scripts\setup-tools.ps1"
+. "$env:USERPROFILE\dotfiles\scripts\setup-tools-prompt.ps1"
+. "$env:USERPROFILE\dotfiles\scripts\setup-tools-node.ps1"
 . "$env:USERPROFILE\dotfiles\scripts\setup-tools-ide.ps1"
