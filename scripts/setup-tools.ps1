@@ -14,7 +14,8 @@ choco install -y 7zip
 
 winget install -e -h --id Microsoft.PowerToys --source winget
 winget install -e -h --id Obsidian.Obsidian
-winget install -e -h --id Logitech.Options
+winget install -e -h --id Logitech.OptionsPlus
+winget install -e -h --id Logitech.GHUB
 winget install -e -h --id Notepad++.Notepad++
 winget install -e -h --id JGraph.Draw
 
