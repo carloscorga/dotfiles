@@ -18,6 +18,8 @@ RefreshEnvPath
 
 # Powershell Modules
 
+Install-Module PSReadLine -AllowPrerelease -Force
+
 Install-Module -Name Terminal-Icons -RequiredVersion 0.9.0 # https://www.powershellgallery.com/packages/Terminal-Icons/0.9.0
 # choco install -y terminal-icons.powershell
 
