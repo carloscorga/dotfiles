@@ -61,10 +61,10 @@ winget install -e -h --id dbeaver.dbeaver
 # Azure tools
 
 winget install -e -h --id Microsoft.AzureCLI
-winget install -e -h --id Microsoft.AzureCosmosEmulator
-winget install -e -h --id Microsoft.AzureDataStudio
-winget install -e -h --id Microsoft.AzureStorageExplorer
-winget install -e -h --id Microsoft.AzureStorageEmulator
-winget install -e -h --id Microsoft.AzureDataCLI
-winget install -e -h --id Microsoft.AzureFunctionsCoreTools
-winget install -e -h --id Microsoft.AzureMediaServicesExplorer
+# winget install -e -h --id Microsoft.AzureCosmosEmulator
+# winget install -e -h --id Microsoft.AzureDataStudio
+# winget install -e -h --id Microsoft.AzureStorageExplorer
+# winget install -e -h --id Microsoft.AzureStorageEmulator
+# winget install -e -h --id Microsoft.AzureDataCLI
+# winget install -e -h --id Microsoft.AzureFunctionsCoreTools
+# winget install -e -h --id Microsoft.AzureMediaServicesExplorer
