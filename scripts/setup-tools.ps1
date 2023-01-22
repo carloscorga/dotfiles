@@ -33,6 +33,7 @@ winget install -e -h --id Microsoft.Teams
 # Security
 
 winget install -e -h --id DominikReichl.KeePass
+winget install -e -h --id Twilio.Authy
 
 # Browsers
 
