@@ -51,7 +51,7 @@ if ($installVisualStudio) {
     {
         0 { winget install -e -h --id Microsoft.VisualStudio.2022.Community; Break; }
         1 { winget install -e -h --id Microsoft.VisualStudio.2022.Enterprise; Break; }
-        2 { winget install -e -h --id Microsoft.VisualStudio.2022.Professional; Break; }
+        2 { winget install -e -h --id Microsoft.VisualStudio.2022.Professional --silent --override "--wait --quiet --add ProductLang En-us --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.Data --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended"; Break; }
     }
 }
 
