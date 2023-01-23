@@ -16,11 +16,15 @@ code --install-extension aaron-bond.better-comments
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension quicktype.quicktype # Paste JSON as Code
 
-# TODO: Pick one.
-code --install-extension vscode-icons-team.vscode-icons
-#code --install-extension PKief.material-icon-theme
+code --install-extension humao.rest-client
+code --install-extension formulahendry.dotnet
+
+#code --install-extension vscode-icons-team.vscode-icons
+code --install-extension PKief.material-icon-theme
 
 code --install-extension ms-dotnettools.csharp
+code --install-extension ms-azuretools.vscode-azurefunctions
+code --install-extension ms-vscode.azurecli
 code --install-extension ms-vscode.PowerShell
 
 # Live Share
